@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
- * main -print all single digit numbers of base 10
+ * main -print 0123456789
  * return: Always 0 (success)
  */
 
@@ -10,8 +11,10 @@ int main(void)
 	
 	while (n < 10)
 	{
-		printf("%d",n);
+		printf("%d", n);
 		n++;
 	}
+	putchar('\n');
+
 	return (0);
 }
