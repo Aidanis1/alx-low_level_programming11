@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - print alx, followed by new line
+ * main - print Holberton, followed by new line
  * Return: 0
  */
 
