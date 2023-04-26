@@ -5,7 +5,6 @@
  * @s: string used
  * Return: string length
  */
-
 int length(char *s)
 {
 	int i = 0;
@@ -24,10 +23,8 @@ int length(char *s)
  * @s: string
  * Return: int value of the result
  */
-
 int help(int i, char *s)
 {
-	{
 	if (*s)
 	{
 		if (*s != s[length(s) - i])
@@ -44,7 +41,6 @@ int help(int i, char *s)
  * @s: string
  * Return: boolean
  */
-
 int is_palindrome(char *s)
 {
 	int i = 1;
