@@ -1,31 +1,40 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - print 1 to 100,
- * multiples of 3 with Fizz,
- * multiples of 5 with Buzz
- * and multiple of both 3 and 5 with FizzBuzz
- * Return: 0 on success
+ * times_table - print multiplication table
  */
 
-int main(void)
+void times_table(void)
 {
-	int i;
+	int row;
+	int column;
+	int product;
 
-	for (i = 1; i <= 100; i++)
+	for (row = 0; row <= 9; row++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-			printf("FizzBuzz");
-		else if (i % 3 == 0)
-			printf("Fizz");
-		else if (i % 5 == 0)
-			printf("Buzz");
-		else
-			printf("%d", i);
+		for (column = 0; column <= 9; column++)
+		{
+			product = (row * column);
 
-		if (i < 100)
-			printf(" ");
+			if (column == 0)
+			{
+				_putchar('0' + product);
+			}
+			else if (product <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + product);
+			}
+			else if (product > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar('0' + (product / 10));
+				_putchar('0' + (product % 10));
+			}
+		}
+		_putchar('\n');
 	}
-	printf("\n");
-	return (0);
 }
