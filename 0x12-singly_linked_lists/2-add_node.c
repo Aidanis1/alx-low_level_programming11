@@ -10,11 +10,10 @@
  *
  * Return: address of new element
  */
-
 list_t *add_node(list_t **head, const char *str)
 {
 	char *newstr, *ptr;
-	lists_t *newnode;
+	list_t *newnode;
 	int len = 0;
 
 	if (str != NULL)
