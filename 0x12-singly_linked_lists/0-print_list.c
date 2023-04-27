@@ -1,15 +1,14 @@
-#include <stdio.h>
 #include "lists.h"
+#include <stdio.h>
 
 /**
- * list_len - returns number of nodes starting at element h
+ * print_list - prints a list_t linked list
  *
- * @h: first node of linked list to count from
+ * @h: first node of linked list to print
  *
  * Return: number of nodes printed
  */
-
-size_t list_len(const list_t *h)
+size_t print_list(const list_t *h)
 {
 	size_t len = 0;
 
