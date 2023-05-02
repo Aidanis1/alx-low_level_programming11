@@ -10,6 +10,17 @@
  * Return: value of node, or 0 if list empty
  */
 
+#include "lists.h"
+#include <stdlib.h>
+
+/**
+ * pop_listint - returns value of head node and removes it,
+ * 0 otherwise
+ *
+ * @head: head of list
+ *
+ * Return: value of node, or 0 if list empty
+ */
 int pop_listint(listint_t **head)
 {
 	int n;
@@ -22,6 +33,5 @@ int pop_listint(listint_t **head)
 	next = (*head)->next;
 	free(*head);
 	*head = next;
-	
 	return (n);
 }
